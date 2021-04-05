@@ -1,0 +1,99 @@
+[2021-03-30 15:09:35,669] SEVERE {b7a.log.crash} - there are test failures 
+java.lang.RuntimeException: there are test failures
+	at org.ballerinalang.test.runtime.util.TesterinaUtils.executeTests(TesterinaUtils.java:79)
+	at org.ballerinalang.test.runtime.Main.startTestSuit(Main.java:116)
+	at org.ballerinalang.test.runtime.Main.main(Main.java:97)
+ 
+[2021-04-05 10:24:19,723] SEVERE {b7a.log.crash} - there are test failures 
+java.lang.RuntimeException: there are test failures
+	at org.ballerinalang.test.runtime.util.TesterinaUtils.executeTests(TesterinaUtils.java:79)
+	at org.ballerinalang.test.runtime.Main.startTestSuit(Main.java:116)
+	at org.ballerinalang.test.runtime.Main.main(Main.java:97)
+ 
+[2021-04-05 10:26:01,349] SEVERE {b7a.log.crash} - java.lang.ArithmeticException: / by zero 
+org.ballerinalang.test.runtime.exceptions.BallerinaTestException: java.lang.ArithmeticException: / by zero
+	at org.ballerinalang.test.runtime.entity.TesterinaFunction.runOnSchedule(TesterinaFunction.java:125)
+	at org.ballerinalang.test.runtime.entity.TesterinaFunction.invoke(TesterinaFunction.java:54)
+	at org.ballerinalang.test.runtime.BTestRunner.invokeTestFunction(BTestRunner.java:608)
+	at org.ballerinalang.test.runtime.BTestRunner.executeFunction(BTestRunner.java:408)
+	at org.ballerinalang.test.runtime.BTestRunner.lambda$executeTests$1(BTestRunner.java:310)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.ballerinalang.test.runtime.BTestRunner.executeTests(BTestRunner.java:298)
+	at org.ballerinalang.test.runtime.BTestRunner.execute(BTestRunner.java:269)
+	at org.ballerinalang.test.runtime.BTestRunner.runTest(BTestRunner.java:115)
+	at org.ballerinalang.test.runtime.util.TesterinaUtils.executeTests(TesterinaUtils.java:76)
+	at org.ballerinalang.test.runtime.Main.startTestSuit(Main.java:116)
+	at org.ballerinalang.test.runtime.Main.main(Main.java:97)
+Caused by: java.lang.ArithmeticException: / by zero
+	at Ibaqu.divide(Ibaqu.java:14)
+	at Ibaqu.divideInt(Ibaqu.java:9)
+	at mohamedaquibzulfikar.Interop.0_1_0.main.divideInt(main.bal:7)
+	at mohamedaquibzulfikar.Interop.0_1_0.tests.main_test.test4(tests/main_test.bal:26)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.ballerinalang.test.runtime.entity.TesterinaFunction.lambda$runOnSchedule$0(TesterinaFunction.java:109)
+	at io.ballerina.runtime.internal.scheduling.SchedulerItem.execute(Scheduler.java:571)
+	at io.ballerina.runtime.internal.scheduling.Scheduler.run(Scheduler.java:301)
+	at io.ballerina.runtime.internal.scheduling.Scheduler.runSafely(Scheduler.java:269)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+ 
+[2021-04-05 10:28:16,213] SEVERE {b7a.log.crash} - there are test failures 
+java.lang.RuntimeException: there are test failures
+	at org.ballerinalang.test.runtime.util.TesterinaUtils.executeTests(TesterinaUtils.java:79)
+	at org.ballerinalang.test.runtime.Main.startTestSuit(Main.java:116)
+	at org.ballerinalang.test.runtime.Main.main(Main.java:97)
+ 
+[2021-04-05 10:35:55,848] SEVERE {b7a.log.crash} - java.lang.NullPointerException 
+org.ballerinalang.test.runtime.exceptions.BallerinaTestException: java.lang.NullPointerException
+	at org.ballerinalang.test.runtime.entity.TesterinaFunction.runOnSchedule(TesterinaFunction.java:125)
+	at org.ballerinalang.test.runtime.entity.TesterinaFunction.invoke(TesterinaFunction.java:54)
+	at org.ballerinalang.test.runtime.BTestRunner.invokeTestFunction(BTestRunner.java:608)
+	at org.ballerinalang.test.runtime.BTestRunner.executeFunction(BTestRunner.java:408)
+	at org.ballerinalang.test.runtime.BTestRunner.lambda$executeTests$1(BTestRunner.java:310)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.ballerinalang.test.runtime.BTestRunner.executeTests(BTestRunner.java:298)
+	at org.ballerinalang.test.runtime.BTestRunner.execute(BTestRunner.java:269)
+	at org.ballerinalang.test.runtime.BTestRunner.runTest(BTestRunner.java:115)
+	at org.ballerinalang.test.runtime.util.TesterinaUtils.executeTests(TesterinaUtils.java:76)
+	at org.ballerinalang.test.runtime.Main.startTestSuit(Main.java:116)
+	at org.ballerinalang.test.runtime.Main.main(Main.java:97)
+Caused by: java.lang.NullPointerException
+	at Ibaqu.call(Ibaqu.java:19)
+	at mohamedaquibzulfikar.Interop.0_1_0.main.call(main.bal:12)
+	at mohamedaquibzulfikar.Interop.0_1_0.tests.main_test.test5(tests/main_test.bal:32)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.ballerinalang.test.runtime.entity.TesterinaFunction.lambda$runOnSchedule$0(TesterinaFunction.java:109)
+	at io.ballerina.runtime.internal.scheduling.SchedulerItem.execute(Scheduler.java:571)
+	at io.ballerina.runtime.internal.scheduling.Scheduler.run(Scheduler.java:301)
+	at io.ballerina.runtime.internal.scheduling.Scheduler.runSafely(Scheduler.java:269)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+ 
+[2021-04-05 10:37:08,591] SEVERE {b7a.log.crash} - there are test failures 
+java.lang.RuntimeException: there are test failures
+	at org.ballerinalang.test.runtime.util.TesterinaUtils.executeTests(TesterinaUtils.java:79)
+	at org.ballerinalang.test.runtime.Main.startTestSuit(Main.java:116)
+	at org.ballerinalang.test.runtime.Main.main(Main.java:97)
+ 
+[2021-04-05 10:37:37,394] SEVERE {b7a.log.crash} - there are test failures 
+java.lang.RuntimeException: there are test failures
+	at org.ballerinalang.test.runtime.util.TesterinaUtils.executeTests(TesterinaUtils.java:79)
+	at org.ballerinalang.test.runtime.Main.startTestSuit(Main.java:116)
+	at org.ballerinalang.test.runtime.Main.main(Main.java:97)
+ 
+[2021-04-05 10:37:57,914] SEVERE {b7a.log.crash} - there are test failures 
+java.lang.RuntimeException: there are test failures
+	at org.ballerinalang.test.runtime.util.TesterinaUtils.executeTests(TesterinaUtils.java:79)
+	at org.ballerinalang.test.runtime.Main.startTestSuit(Main.java:116)
+	at org.ballerinalang.test.runtime.Main.main(Main.java:97)
+ 
+[2021-04-05 10:39:48,943] SEVERE {b7a.log.crash} - there are test failures 
+java.lang.RuntimeException: there are test failures
+	at org.ballerinalang.test.runtime.util.TesterinaUtils.executeTests(TesterinaUtils.java:79)
+	at org.ballerinalang.test.runtime.Main.startTestSuit(Main.java:116)
+	at org.ballerinalang.test.runtime.Main.main(Main.java:97)
+ 
