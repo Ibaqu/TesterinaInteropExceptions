@@ -14,20 +14,35 @@ public class Ibaqu {
         return 5/i;
     }
 
+
+
+
+
+
+
     public static void call() {
         System.out.println("~ [Ibaqu] call called. Throwning exception");
         throw new NullPointerException();
     }
 
+
+
+
+
     public static void addInt() {
         System.out.println("~ [Ibaqu] Add Int called");
         int a = Aquib.add(4, 6);
+        
+        
         System.out.println("Ans : " + a);
     }
 
     public static int returnAddInt() {
         System.out.println("~ [Ibaqu] Return Add Int called");
         int a = Aquib.add(1, 6);
+        
+        
+        
         return a;
     }
     

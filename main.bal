@@ -1,7 +1,7 @@
 import ballerina/jballerina.java;
 
 public function main() {
-    
+    addInt();
 }
 
 public isolated function divideInt() = @java:Method {
@@ -13,6 +13,7 @@ public isolated function call()  = @java:Method {
     name: "call",
     'class: "Ibaqu"
 } external;
+
 
 public isolated function addInt() = @java:Method {
     name: "addInt",
