@@ -5,7 +5,7 @@ public class Aquib {
     }
 
     public static int add(int a, int b) {
-        System.out.println("~ [Ibaqu] Add called. Returning " + (a + b));
+        System.out.println("~ [Aquib] Add called. Returning " + (a + b));
         return a + b;
     }
     

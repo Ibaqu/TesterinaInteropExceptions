@@ -9,6 +9,11 @@ public isolated function divideInt() = @java:Method {
     'class: "Ibaqu"
 } external;
 
+public isolated function divideIntReturn(int a) returns int = @java:Method {
+    name : "divideIntReturn",
+    'class: "Ibaqu"
+} external;
+
 public isolated function call()  = @java:Method {
     name: "call",
     'class: "Ibaqu"
